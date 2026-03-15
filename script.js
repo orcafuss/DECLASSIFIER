@@ -4,15 +4,14 @@ let level = 1;
 let lastDocIndex = null;
 let comboCount = 0;
 let comboTimer = null;
-let perfectCombo = true; // true until a combo expires on this document
-let docComboTotal = 0;   // sum of all points from combos on current doc (for toast)
-let inCombo = false;     // true once first click of current combo streak
+let perfectCombo = true;
+let docComboTotal = 0;
+let inCombo = false;
 
 const basePoints = 10;
 const comboIncrement = 5;
 const comboMax = 30;
 
-// ── Circumference for the combo arc (r=43)
 const COMBO_CIRCUMFERENCE = 2 * Math.PI * 43;
 
 const scoreEl       = document.getElementById("score");
@@ -24,7 +23,6 @@ const comboMult     = document.getElementById("combo-multiplier");
 const comboLabelEl  = document.getElementById("combo-label");
 const toastArea     = document.getElementById("score-toasts");
 
-// Initialise arc
 comboArc.style.strokeDasharray  = COMBO_CIRCUMFERENCE;
 comboArc.style.strokeDashoffset = COMBO_CIRCUMFERENCE;
 
@@ -58,13 +56,11 @@ function getDocStyle(doc) {
     return "";
 }
 
-// ── Score ─────────────────────────────────────────────────────────────────────
 function updateScore(amount) {
     score += amount;
     scoreEl.textContent = `${score} POINTS`;
 }
 
-// ── Combo-arc color ───────────────────────────────────────────────────────────
 const comboArcColors = ['#e99270','#f28c6f','#f36c5c','#f03d3d','#d90000'];
 
 function getComboClass(points) {
@@ -83,7 +79,6 @@ function getComboColorIndex(points) {
     return 0;
 }
 
-// ── Update the circular combo widget ─────────────────────────────────────────
 function updateComboDisplay(active) {
     if (!active || comboCount <= 0) {
         comboDisplay.classList.remove("visible");
@@ -99,21 +94,17 @@ function updateComboDisplay(active) {
     comboMult.style.color = comboArcColors[colorIndex];
     comboMult.textContent = `×${comboCount}`;
 
-    // Arc fills as combo timer counts down — we animate via a CSS transition
-    // reset to full on each click
     comboArc.style.strokeDashoffset = 0;
 }
 
-// Reset arc to empty (timer expired animation)
 function drainComboArc() {
     comboArc.style.transition = `stroke-dashoffset ${getComboTimeout()}ms linear`;
     comboArc.style.strokeDashoffset = COMBO_CIRCUMFERENCE;
 }
 
-// ── Toast notifications ───────────────────────────────────────────────────────
-// Each toast is absolutely positioned at its spawn offset and never moves.
-const TOAST_LINE_HEIGHT = 32; // px between consecutive toasts
-let toastOffset = 0;          // next available top offset within #score-toasts
+// Toast notifications
+const TOAST_LINE_HEIGHT = 32;
+let toastOffset = 0;
 
 function spawnToast(label, points, cssClass) {
     const text = label ? `${label} +${points}` : `+${points}`;
@@ -131,7 +122,6 @@ function spawnToast(label, points, cssClass) {
     });
 }
 
-// ── Random doc index (no repeats) ────────────────────────────────────────────
 function getTextIndex() {
     if (files.length === 1) return 0;
     let i;
@@ -141,7 +131,7 @@ function getTextIndex() {
     return i;
 }
 
-// ── Redaction ─────────────────────────────────────────────────────────────────
+// Redaction
 function redact(text) {
     const words = text.split(" ");
 
@@ -173,7 +163,6 @@ function redact(text) {
     return redacted.join(" ");
 }
 
-// ── Build document HTML ───────────────────────────────────────────────────────
 function buildDocHTML(doc) {
     return `
         <div class="stamp" id="declassified-stamp">DECLASSIFIED</div>
@@ -188,9 +177,6 @@ function buildDocHTML(doc) {
     `;
 }
 
-
-
-// ── Attach click handlers ─────────────────────────────────────────────────────
 const animatingDocs = [];
 
 function attachClicks(docEl) {
@@ -216,32 +202,23 @@ function attachClicks(docEl) {
             });
             setTimeout(() => popup.remove(), 500);
 
-            // Combo circle
-            // Reset arc transition so it snaps to full on click
             comboArc.style.transition = "stroke-dashoffset 0.05s ease, stroke 0.2s ease";
             updateComboDisplay(true);
-            // Then start draining
             requestAnimationFrame(() => {
                 setTimeout(() => drainComboArc(), 60);
             });
 
-            // Fade out redaction
             span.classList.add("fade-out");
             setTimeout(() => {
                 span.classList.remove("redacted", "fade-out");
 
                 if (docEl.querySelectorAll(".redacted").length === 0) {
-                    // ── Document complete ──
                     const stamp = docEl.querySelector("#declassified-stamp");
                     if (stamp) stamp.classList.add("stamp-appear");
                     docEl.querySelector(".classification").textContent = "DECLASSIFIED";
 
-                    // Flush current combo as a toast before clearing
                     flushComboToast();
 
-                    // Perfect combo bonus — scales with combo depth:
-                    // base 30 pts (triggered at max combo ×5+), then +5 per
-                    // redaction beyond the 5th in the streak.
                     if (perfectCombo && docComboTotal > 0) {
                         const extraClicks = Math.max(0, comboCount - 5);
                         const bonus = comboCount >= 5 ? 30 + extraClicks * 5 : 0;
@@ -253,7 +230,6 @@ function attachClicks(docEl) {
 
                     setTimeout(() => nextDocument(), 500);
 
-                    // Reset doc-level state
                     if (comboTimer) clearTimeout(comboTimer);
                     comboCount = 0;
                     perfectCombo = true;
@@ -263,14 +239,12 @@ function attachClicks(docEl) {
                 }
             }, 150);
 
-            // Combo timer
             if (comboTimer) clearTimeout(comboTimer);
             comboTimer = setTimeout(() => {
-                // Combo expired — fire toast if we had a meaningful combo
                 flushComboToast();
                 comboCount = 0;
                 inCombo = false;
-                perfectCombo = false; // combo broke
+                perfectCombo = false;
                 updateComboDisplay(false);
             }, getComboTimeout());
 
