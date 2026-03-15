@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECLASSIFIER</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="header">
+    <div id="level">DOCUMENT 1</div>
+    <div id="score">0 POINTS</div>
+</header>
+
+<div id="score-toasts"></div>
+
+<main id="viewport">
+    <div id="document-container">
+        <div class="document active">
+            <div class="doc-header">
+                <p><strong>DOCUMENT ID:</strong> REDACTED</p>
+                <p><strong>SOURCE:</strong> REDACTED</p>
+                <p><strong>REFERENCE:</strong> REDACTED</p>
+                <p><strong>DATE:</strong> REDACTED</p>
+                <p><strong>CLASSIFICATION:</strong> REDACTED</p>
+            </div>
+            <p id="document-text"></p>
+        </div>
+    </div>
+</main>
+
+<div id="combo-display">
+    <svg id="combo-svg" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+        <circle id="combo-track" cx="48" cy="48" r="43"/>
+        <circle id="combo-arc"   cx="48" cy="48" r="43"/>
+    </svg>
+    <div id="combo-inner">
+        <span id="combo-multiplier">×1</span>
+        <span id="combo-label">COMBO</span>
+    </div>
+</div>
+
+<script src="assets/data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
