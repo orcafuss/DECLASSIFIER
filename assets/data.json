@@ -1,1 +1,268 @@
-
+[
+  {
+    "id": "LAW-001",
+    "source": "British Legal Archive",
+    "reference": "Magna Carta",
+    "date": "1215",
+    "content": "No scutage nor aid shall be imposed on our kingdom, unless by common counsel of our kingdom, except for ransoming our person, for making our eldest son a knight, and for once marrying our eldest daughter; and for these there shall not be levied more than a reasonable aid. In like manner it shall be done concerning aids from the city of London."
+  },
+  {
+    "id": "LAW-002",
+    "source": "British Legal Archive",
+    "reference": "Magna Carta",
+    "date": "1215",
+    "content": "No freeman shall be taken or imprisoned or disseised or exiled or in anyway destroyed, nor will we go upon him nor send upon him, except by the lawful judgment of his peers or by the law of the land."
+  },
+  {
+    "id": "LAW-003",
+    "source": "American Legal Archive",
+    "reference": "Constitution of the United States",
+    "date": "1787",
+    "content": "We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America."
+  },
+  {
+    "id": "LAW-004",
+    "source": "American Legal Archive",
+    "reference": "Bill of Rights",
+    "date": "1789",
+    "content": "Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances."
+  },
+  {
+    "id": "LAW-005",
+    "source": "International Legal Archive",
+    "reference": "Universal Declaration of Human Rights",
+    "date": "1948",
+    "content": "All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood."
+  },
+  {
+    "id": "LAW-006",
+    "source": "International Legal Archive",
+    "reference": "Universal Declaration of Human Rights",
+    "date": "1948",
+    "content": "Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status."
+  },
+  {
+    "id": "LAW-007",
+    "source": "International Legal Archive",
+    "reference": "Universal Declaration of Human Rights",
+    "date": "1948",
+    "content": "Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others and in public or private, to manifest his religion or belief in teaching, practice, worship and observance."
+  },
+  {
+    "id": "LAW-008",
+    "source": "German Legal Archive",
+    "reference": "Grundgesetz für die Bundesrepublik Deutschland",
+    "date": "1949",
+    "content": "Im Bewußtsein seiner Verantwortung vor Gott und den Menschen, von dem Willen beseelt, als gleichberechtigtes Glied in einem vereinten Europa dem Frieden der Welt zu dienen, hat sich das Deutsche Volk kraft seiner verfassungsgebenden Gewalt dieses Grundgesetz gegeben."
+  },
+  {
+    "id": "LAW-009",
+    "source": "German Legal Archive",
+    "reference": "Grundgesetz für die Bundesrepublik Deutschland",
+    "date": "1949",
+    "content": "Die Würde des Menschen ist unantastbar. Sie zu achten und zu schützen ist Verpflichtung aller staatlichen Gewalt. <br> Das Deutsche Volk bekennt sich darum zu unverletzlichen und unveräußerlichen Menschenrechten als Grundlage jeder menschlichen Gemeinschaft, des Friedens und der Gerechtigkeit in der Welt."
+  },
+  {
+    "id": "REL-001",
+    "source": "Religious Text Archive",
+    "reference": "Genesis 1:1—3",
+    "date": "UNKNOWN",
+    "content": "In the beginning God created the heaven and the earth. <br> And the earth was without form, and void; and darkness was upon the face of the deep. And the Spirit of God moved upon the face of the waters. <br> And God said, Let there be light: and there was light."
+  },
+  {
+    "id": "REL-002",
+    "source": "Religious Text Archive",
+    "reference": "Genesis 2:2—3",
+    "date": "UNKNOWN",
+    "content": "And on the seventh day God ended his work which he had made; and he rested on the seventh day from all his work which he had made. <br> And God blessed the seventh day, and sanctified it: because that in it he had rested from all his work which God created and made."
+  },
+  {
+    "id": "REL-003",
+    "source": "Religious Text Archive",
+    "reference": "Psalms 22:1—2",
+    "date": "UNKNOWN",
+    "content": "My God, my God, why hast thou forsaken me? <i> why art thou so </i> far from helping me, <i> and </i> from the words of my roaring? <br> O my God, I cry in the daytime, but thou hearest not; and in the night season, and am not silent."
+  },
+  {
+    "id": "REL-004",
+    "source": "Religious Text Archive",
+    "reference": "Psalms 23:1—3",
+    "date": "UNKNOWN",
+    "content": "The LORD <i> is </i> my shepherd; I shall not want. <br> He maketh me to lie down in green pastures: he leadeth me beside the still waters. <br> He restoreth my soul: he leadeth me in the paths of righteousness for his name's sake."
+  },
+  {
+    "id": "REL-005",
+    "source": "Religious Text Archive",
+    "reference": "Isaiah 9:6",
+    "date": "UNKNOWN",
+    "content": "For unto us a child is born, unto us a son is given: and the government shall be upon his shoulder: and his name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace."
+  },
+  {
+    "id": "REL-006",
+    "source": "Religious Text Archive",
+    "reference": "Matthew 6:9—13",
+    "date": "c. 80",
+    "content": "After this manner therefore pray ye: Our Father which art in heaven, Hallowed be thy name. <br> Thy kingdom come, Thy will be done in earth, as <i> it is </i> in heaven. <br> Give us this day our daily bread. <br> And forgive us our debts, as we forgive our debtors. <br> And lead us not into temptation, but deliver us from evil: For thine is the kingdom, and the power, and the glory, for ever. Amen."
+  },
+  {
+    "id": "REL-007",
+    "source": "Religious Text Archive",
+    "reference": "John 1:1—5",
+    "date": "c. 100",
+    "content": "In the beginning was the Word, and the Word was with God, and the Word was God. <br> The same was in the beginning with God. <br> All things were made by him; and without him was not any thing made that was made. <br> In him was life; and the life was the light of men. <br> And the light shineth in darkness; and the darkness comprehended it not."
+  },
+  {
+    "id": "LIT-001",
+    "source": "British Literary Archive",
+    "reference": "Hamlet",
+    "date": "1603",
+    "content": "To be, or not to be — that is the question. <br> Whether 'tis nobler in the mind to suffer <br> The slings and arrows of outrageous fortune, <br> Or to take arms against a sea of troubles <br> And, by opposing end them?"
+  },
+  {
+    "id": "LIT-002",
+    "source": "British Literary Archive",
+    "reference": "Eloisa to Abelard",
+    "date": "1717",
+    "content": "How happy is the blameless vestal's lot! <br> The world forgetting, by the world forgot. <br> Eternal sunshine of the spotless mind! <br> Each pray'r accepted, and each wish resign'd;"
+  },
+  {
+    "id": "LIT-003",
+    "source": "German Literary Archive",
+    "reference": "Erlkönig",
+    "date": "1782",
+    "content": "Wer reitet so spät durch Nacht und Wind? <br> Es ist der Vater mit seinem Kind; <br> Er hat den Knaben wohl in dem Arm, <br> Er fasst ihn sicher, er hält ihn warm. <br> Mein Sohn, was birgst du so bang dein Gesicht? – <br> Siehst, Vater, du den Erlkönig nicht? <br> Den Erlenkönig mit Kron’ und Schweif? – <br> Mein Sohn, es ist ein Nebelstreif. –"
+  },
+  {
+    "id": "LIT-004",
+    "source": "German Literary Archive",
+    "reference": "Willkommen und Abschied",
+    "date": "1789",
+    "content": "Es schlug mein Herz, geschwind zu Pferde! <br> Es war getan fast eh gedacht. <br> Der Abend wiegte schon die Erde, <br> Und an den Bergen hing die Nacht; <br> Schon stand im Nebelkleid die Eiche, <br> Ein aufgetürmter Riese, da, <br> Wo Finsternis aus dem Gesträuche <br> Mit hundert schwarzen Augen sah."
+  },
+  {
+    "id": "LIT-005",
+    "source": "German Literary Archive",
+    "reference": "An die Freude",
+    "date": "1808",
+    "content": "Freude, schöner Götterfunken, <br> Tochter aus Elisium, <br> Wir betreten feuertrunken, <br> Himmlische, dein Heiligthum. <br> Deine Zauber binden wieder, <br> Was die Mode streng getheilt, <br> Alle Menschen werden Brüder, <br> Wo dein sanfter Flügel weilt."
+  },
+  {
+    "id": "LIT-006",
+    "source": "British Literary Archive",
+    "reference": "Frankenstein",
+    "date": "1818",
+    "content": "You will rejoice to hear that no disaster has accompanied the commencement of an enterprise which you have regarded with such evil forebodings."
+  },
+  {
+    "id": "LIT-007",
+    "source": "German Literary Archive",
+    "reference": "Das Lied der Deutschen",
+    "date": "1841",
+    "content": "Einigkeit und Recht und Freiheit <br> für das deutsche Vaterland! <br> Danach lasst uns alle streben <br> brüderlich mit Herz und Hand! <br> Einigkeit und Recht und Freiheit <br> sind des Glückes Unterpfand – <br> 𝄆 Blüh im Glanze dieses Glückes, <br> blühe, deutsches Vaterland! 𝄇"
+  },
+  {
+    "id": "LIT-008",
+    "source": "American Literary Archive",
+    "reference": "The Raven",
+    "date": "1845",
+    "content": "Once upon a midnight dreary, while I pondered, weak and weary, <br> Over many a quaint and curious volume of forgotten lore— <br> While I nodded, nearly napping, suddenly there came a tapping, <br> As of some one gently rapping, rapping at my chamber door. <br> “’Tis some visiter,” I muttered, “tapping at my chamber door— <br> Only this and nothing more.”"
+  },
+  {
+    "id": "LIT-009",
+    "source": "American Literary Archive",
+    "reference": "Moby Dick",
+    "date": "1851",
+    "content": "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world."
+  },
+  {
+    "id": "LIT-010",
+    "source": "German Literary Archive",
+    "reference": "Die Gedanken sind frei",
+    "date": "1856",
+    "content": "Die Gedanken sind frei, <br> Wer kann sie errathen? <br> Sie rauschen vorbei <br> Wie nächtliche Schatten. <br> Kein Mensch kann sie wißen, <br> Kein Jäger sie schießen. <br> Es bleibet dabei: <br> Die Gedanken sind frei."
+  },
+  {
+    "id": "LIT-011",
+    "source": "British Literary Archive",
+    "reference": "A Study in Scarlet",
+    "date": "1887",
+    "content": "I’m a consulting detective, if you can understand what that is. Here in London we have lots of Government detectives and lots of private ones. When these fellows are at fault they come to me, and I manage to put them on the right scent."
+  },
+  {
+    "id": "LIT-012",
+    "source": "British Literary Archive",
+    "reference": "The Picture of Dorian Gray",
+    "date": "1890",
+    "content": "The studio was filled with the rich odour of roses, and when the light summer wind stirred amidst the trees of the garden, there came through the open door the heavy scent of the lilac, or the more delicate perfume of the pink-flowering thorn."
+  },
+  {
+    "id": "LIT-013",
+    "source": "British Literary Archive",
+    "reference": "The Picture of Dorian Gray",
+    "date": "1890",
+    "content": "You have a wonderfully beautiful face, Mr. Gray. Don't frown. You have. And beauty is a form of genius—is higher, indeed, than genius, as it needs no explanation. It is of the great facts of the world, like sunlight, or spring-time, or the reflection in dark waters of that silver shell we call the moon. It cannot be questioned. It has its divine right of sovereignty. It makes princes of those who have it."
+  },
+  {
+    "id": "LIT-014",
+    "source": "British Literary Archive",
+    "reference": "The Adventures of Sherlock Holmes",
+    "date": "1892",
+    "content": "To Sherlock Holmes she is always <i> the </i> woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler."
+  },
+  {
+    "id": "LIT-015",
+    "source": "British Literary Archive",
+    "reference": "The Adventures of Sherlock Holmes",
+    "date": "1892",
+    "content": "It is a capital mistake to theorise before one has data. Insensibly one begins to twist facts to suit theories, instead of theories to suit facts."
+  },
+  {
+    "id": "LIT-016",
+    "source": "British Literary Archive",
+    "reference": "Winnie-the-Pooh",
+    "date": "1926",
+    "content": "Here is Edward Bear, coming downstairs now, bump, bump, bump, on the back of his head, behind Christopher Robin. It is, as far as he knows, the only way of coming downstairs, but sometimes he feels that there really is another way, if only he could stop bumping for a moment and think of it."
+  },
+  {
+    "id": "PHI-001",
+    "source": "Philosophical Text Archive",
+    "reference": "Leviathan",
+    "date": "1651",
+    "content": "In such condition, there is no place for Industry [...]; and consequently no Culture of the Earth; no Navigation, nor use of the commodities that may be imported by Sea; no commodious Building; no Instruments of moving, and removing such things [...]; no Knowledge of the face of the Earth; no account of Time; no Arts; no Letters; no Society; and which is worst of all, continuall feare, and danger of violent death; And the life of man, solitary, poore, nasty, brutish, and short."
+  },
+  {
+    "id": "SCI-001",
+    "source": "British Literary Archive",
+    "reference": "On the Origin of Species",
+    "date": "1859",
+    "content": "It will be universally admitted that instincts are as important as corporeal structure for the welfare of each species, under its present conditions of life."
+  },
+  {
+    "id": "SCI-002",
+    "source": "British Literary Archive",
+    "reference": "On the Origin of Species",
+    "date": "1859",
+    "content": "Under changed conditions of life, it is at least possible that slight modifications of instinct might be profitable to a species; and if it can be shown that instincts do vary ever so little, then I can see no difficulty in natural selection preserving and continually accumulating variations of instinct to any extent that may be profitable."
+  },
+  {
+    "id": "HIS-001",
+    "source": "Historical Text Archive",
+    "reference": "Common Sense",
+    "date": "1776",
+    "content": "Perhaps the sentiments contained in the following pages, are not <i> yet </i> sufficiently fashionable to procure them general favor; a long habit of not thinking a thing <i> wrong </i>, gives it a superficial appearance of being <i> right </i>, and raises at first a formidable outcry in defense of custom. But the tumult soon subsides. Time makes more converts than reason."
+  },
+  {
+    "id": "HIS-002",
+    "source": "Historical Text Archive",
+    "reference": "Declaration of Independence",
+    "date": "1776",
+    "content": "We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness."
+  },
+  {
+    "id": "HIS-003",
+    "source": "Historical Text Archive",
+    "reference": "Gettysburg Address",
+    "date": "1863",
+    "content": "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure."
+  }
+]
